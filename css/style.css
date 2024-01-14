@@ -7,6 +7,10 @@
 /* body{
   font-size: 20px;
 } */
+
+.bigcontainer{
+  height: 87rem;
+}
 /* navigation bar  */
 .navbar {
   display: flex;
@@ -17,6 +21,7 @@
   border-bottom: 2px solid #8080804d;
   position: sticky;
   background-color: white;
+  z-index: 2;
 }
 
 /* navigation menu  */
@@ -178,39 +183,42 @@
 }
 
 /* CONTENT  */
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /* subheader */
 .subheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  margin-top: 20px;
+  width: 1563px;
+}
+
+/* SUBHEADERBOTH  */
+.subheaderboth{
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  justify-content: space-between;
+}
+
+.subheaderchild{
   display: flex;
   flex-direction: row;
 }
 
-.subheader1 {
-  display: flex;
-  flex-direction: row;
-  margin-right: 919px;
-  margin-top: 100px;
-  margin: 63px 144px;
-}
-.subheader li{
-  position: relative;
-  top: -17px;
-}
 .subheader li a {
   color: black;
   margin: 0px 0px;
   font-size: 19px;
 }
 
-.subheader2 {
-  display: flex;
-  flex-direction: row;
-  margin-left: 1021px;
-  margin-top: 82px;
-}
-.subheader2 li{
-  position: relative;
-  top: -35px;
-}
 .subheader li {
   list-style-type: none;
 }
@@ -219,17 +227,26 @@
   text-decoration: none;
   margin: 79px -9px;
   padding: 0px 16px;
+  position: relative;
+}
+.subheader li a:hover{
+  text-decoration: none;
+  margin: 79px -9px;
+  padding: 0px 16px;
+  color: gray;
 }
 
 /* HR  */
 .hr {
-  margin: -73px 150px;
-  width: 1739px;
+  margin-top: 7px;
+  width: 1563px;
 }
 
 .hr hr {
-  color: blue;
-  width: 90%;
+  color: #c4c3c3a3;
+  height: 0px;
+  background-color: #c4c3c300;
+  border: 1px solid;
 }
 /* WELCOME BLOCK  */
 .welcome{
@@ -240,7 +257,7 @@
   border: 2px solid #c4c3c3;
   height: 200px;
   width: 1563px;
-  margin: 91px 150px;
+  margin: 45px 0px;
   background-color: #00000008;
 }
 .welcome .para1{
@@ -252,11 +269,9 @@
 }
 /* INFORMATION BLOCK  */
 .info{
-  /* border: 2px solid black; */
   height: 600px;
   width: 1563px;
-  margin: 453px 150px;
-  position: absolute;
+  margin: 0px 0px;
   display: flex;
   flex-direction: row;
 }
@@ -271,6 +286,7 @@
   position: relative;
   top: -11px;
   left: 0px;
+  z-index: 1;
 }
 .info .rightbox{
   border: 2px solid #005dff42;
